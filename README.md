@@ -34,8 +34,7 @@ The initial dataset comprised of three dataframes, 7 columns, which expanded to 
 
 |  Attribute       |       Datatype           |                Definition                   |
 |:----------------:|:------------------------:|:-------------------------------------------:|
-
-|Date         | 1758 non-null  int64  | The date of the trading day.         |
+|Date              | 1758 non-null  int64     | The date of the trading day.         |
 |Open         | 1758 non-null  object | The opening price of the stock for that day.          |
 |High  | 1758 non-null  object |The highest price the stock reached during that day.              |    
 |Low  | 1758 non-null  object |  The lowest price the stock reached during that day.   |
