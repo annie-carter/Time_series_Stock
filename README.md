@@ -56,7 +56,7 @@ Autoregressive Integrated Moving Average (ARIMA) Modeling:
 
 4. Perform feature selection meticulously, identifying influential features impacting the prevalence of the chronic disease through correlation analysis, feature importance estimation, or domain expertise-based selection criteria.
 
-5. Develop specialized scripts (e.g., acquire.py and wrangle.py) for efficient and consistent data acquisition, preparation, and data splitting.
+5. Develop specialized scripts (e.g., wrangle.py or acquire.py and prepare.py) for efficient and consistent data acquisition, preparation, and data splitting.
 
 6. Safeguard proprietary aspects of the project by implementing confidentiality and data security measures, using .gitignore to exclude sensitive information.
 
@@ -64,7 +64,7 @@ Autoregressive Integrated Moving Average (ARIMA) Modeling:
 7. Utilize exploratory data analysis techniques, employing compelling visualizations and relevant statistical tests to extract meaningful patterns and relationships within the dataset.
 
 #### Modeling
-8. Carefully choose a suitable machine learning algorithm, evaluating options like Logistic Regression, Decision Trees, Random Forests, or K Nearest Neighbor tailored for the regression task.
+8. Carefully choose a suitable machine learning algorithm, evaluating options like Moving Averages (MA), Exponential Smoothing, Autoregressive Integrated Moving Average (ARIMA), Holt's Linear Trend time-series analysis task.
 
 9. Implement the selected machine learning models using robust libraries (e.g., scikit-learn), systematically evaluating multiple models, including Decision Trees, Logistic Regression, and Random Forests, with a fixed Random Seed value 42 for reproducibility.
 
