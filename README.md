@@ -1,31 +1,31 @@
-# DHHS Chronic Disease Indicators - Chronic Obstructive Pulmonary Disease (COPD) Prevalence Analysis
-# <bu>CLASSIFICATION PROJECT</bu>
+# Stock Anaylsis 
+# <bu>Time Series Project</bu>
 by Annie Carter
-Sourced by U.S. Department of Health & Human Services
-![image](https://img.freepik.com/premium-photo/lungs-airway-3d-style-darktable-processing_921860-35264.jpg?size=626&ext=jpg&ga=GA1.2.382400335.1688677589&semt=sph)
-
-Trello: https://trello.com/invite/b/8SJiWQzt/ATTIc70085783caf23713771e813130743131BC98E7B/individual-project
+Sourced by Yahoo Finance
+![Image-3.png](https://images.theconversation.com/files/526640/original/file-20230516-23-zv2vps.jpg?ixlib=rb-1.1.0&rect=121%2C80%2C4372%2C2910&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip)
 
 ## <u>Background</u>
-COPD is a prevalent and chronic illness primarily caused by inhaling tobacco smoke, ranking as the third leading cause of death in the United States. COPD is a heterogeneous lung condition characterized by chronic respiratory symptoms such as dyspnea, cough, expectoration, and exacerbations, which result from abnormalities in the airways (bronchitis, bronchiolitis) and/or alveoli (emphysema), leading to persistent and often progressive airflow obstruction. According to estimates, approximately 13 million Americans have received a diagnosis of COPD, and an additional 13 million individuals are unaware of their COPD diagnosis, totaling to about 26 million Americans affected by this chronic respiratory disease (ALA, 2023).
+Coca-Cola, Nike, and Boeing are three prominent and well-established companies with a rich history in their respective industries. Coca-Cola, founded in 1886, is an iconic beverage company known for its signature carbonated soft drink that has become a global symbol of refreshment and happiness. Nike, established in 1964, is a renowned sportswear and athletic footwear manufacturer, recognized for its cutting-edge designs and extensive endorsement of world-class athletes. Boeing, founded in 1916, is a leading aerospace company that has played a pivotal role in shaping the aviation industry with its innovative aircraft, including commercial airliners, defense systems, and space exploration technologies. Over the years, these companies have demonstrated strong financial performance, brand loyalty, and global market presence, making them sought-after choices for investors seeking stable and diverse investment opportunities in the stock market.
 
 ## <u>Project Description</u>
-This machine learning classification project aims to conduct an extensive analysis and predictive assessment of Chronic Obstructive Pulmonary Disease (COPD) prevalence in the United States, utilizing the comprehensive "U.S. Chronic Disease Indicators (CDI)" dataset. The dataset encompasses a wealth of COPD-related information, including risk factors, prevalence rates, health outcomes, and crucial demographic data such as, gender, race, and geographical location. A ML Classification project could shed light on the characteristics of this population and investigate health disparities among vulnerable groups. Understanding COPD's prevalence across different demographics is vital for addressing health disparities, ultimately playing a significant role in reducing the impact of COPD on public health in the United States.
+This Time-Series Machine Learning project aims to forecast future stock prices for three prominent companies: The Coca-Cola Company (KO), Nike Inc. (NKE), and The Boeing Company (BA). Utilizing historical stock price data and other relevant financial indicators, this project seeks to develop accurate predictive models that can analyze and predict stock price movements over time. The comprehensive historical stock price datasets for KO, NKE, and BA will be utilized, along with factors like trading volumes, market trends, and relevant macroeconomic data. By applying advanced Time-Series ML algorithms, this project aims to provide valuable insights into potential future stock price trends for these companies. Accurate stock price predictions for these industry leaders can be instrumental for investors in making informed decisions and identifying investment opportunities. The project's results have the potential to guide investors and financial professionals in developing effective trading strategies and optimizing investment portfolios based on reliable future stock price forecasts.
 
 ## <u>Project Goal</u>
 
-The main objective of this project is to build a predictive model using advanced ML classification techniques that leverage demographic and chronic disease indicators to address fluctuations in COPD rates, with specific attention to gender and race demographics. By conducting this analysis, we seek to identify complex patterns and crucial risk factors related to COPD prevalence. The valuable insights obtained from this investigation will inform targeted interventions, early detection approaches, and enhanced healthcare planning.
+The primary goal of this project is to develop a robust Time-Series Machine Learning forecasting model that leverages historical stock price data, market indicators, and relevant financial factors for The Boeing Company (BA), The Coca-Cola Company (KO), and Nike Inc. (NKE). By applying advanced Time-Series ML algorithms, the project aims to accurately predict future stock price movements for these prominent companies. The forecasting model will be designed to provide valuable insights into potential trends and fluctuations in stock prices, aiding investors and financial professionals in making well-informed decisions and optimizing their investment strategies. The project's success will contribute to improved financial planning, risk management, and investment decision-making for stakeholders interested in these industry-leading companies
 
 
 ## <u>Initial Questions</u>
-1. Is there a relationship between the category of "male or female" and COPD prevalence?
-2. Is there a relationship between race and COPD prevalence?
-3. Is there a relationship between the year and COPD prevalence?
-4. Is there a relationship between the state and COPD prevalence?
+1. Can ML time series analysis accurately predict the future stock prices of The Coca-Cola Company (KO), Nike Inc. (NKE), and The Boeing Company (BA) based on historical stock price data and relevant market indicators?
 
-## Data Dictionary
+2. How well can ML time series models identify trends and patterns in the historical stock price data of KO, NKE, and BA, helping investors make informed decisions about potential stock price movements?
 
-The initial dataset comprised 34 columns, which reduced to 9 columns after preparation. It contained 1,185,676 rows, but a random sample of 1,000,000 rows was chosen for this project using a random state of 42. During preparation, the central target column "Yes_COPD" was created by combining the top four prevalent chronic diseases: COPD, Cardiovascular Disease, Diabetes, and Chronic Obstructive Pulmonary Disease (COPD). Column names were renamed for improved readability and cleaned for data integrity, resulting in 537,407 rows. Some column definitions were obtained from the Center for Disease Control and Prevention (CDC) Morbidity and Mortality Weekly Report (MMWR) at https://www.cdc.gov/mmwr/pdf/rr/rr6401.pdf. 
+3. Can ML time series forecasting reveal any seasonality or cyclical patterns in the stock prices of KO, NKE, and BA, providing valuable insights for traders and investors to adjust their strategies accordingly?
+
+4. Is there any correlation between external factors such as economic indicators, news sentiment, or industry-specific events, and the time series forecast of stock prices for KO, NKE, and BA, offering a deeper understanding of the stock market behavior for these companies?
+
+## <u>Initial Questions</u>
+The initial dataset comprised of three dataframes, 7 columns, which reduced to 9 columns after preparation. It contained 1,185,676 rows, but a random sample of 1,000,000 rows was chosen for this project using a random state of 42. During preparation, the central target column "Yes_COPD" was created by combining the top four prevalent chronic diseases: COPD, Cardiovascular Disease, Diabetes, and Chronic Obstructive Pulmonary Disease (COPD). Column names were renamed for improved readability and cleaned for data integrity, resulting in 537,407 rows. Some column definitions were obtained from the Center for Disease Control and Prevention (CDC) Morbidity and Mortality Weekly Report (MMWR) at https://www.cdc.gov/mmwr/pdf/rr/rr6401.pdf. 
 
 | Original                    |   Target     |       Datatype           |       Definition              |
 |-----------------------------|------------- |--------------------------|------------------------------ |
@@ -56,30 +56,10 @@ The initial dataset comprised 34 columns, which reduced to 9 columns after prepa
 
 
 ## <u>Statistical Testing Hypothesis </u>
-Hypothesis 1 - 
-
-alpha = .05
-* H0 =  Category of "male or female" gender has no relationship to COPD
-* Ha = Category of "male or female" gender has a relationship to COPD
-* Outcome: We reject the Null Hypothesis.
-
-Hypothesis 2 - 
-
-alpha = .05
-* H0 = Race has no relationship to COPD  prevalence
-* Ha = Race has a relationship to COPD  prevalence
-* Outcome: We reject the Null Hypothesis.
-
-Hypothesis 3 -
-
-alpha = .05
-* H0 = Year has no relationship to COPD prevalence
-* Ha = Year has a relationship to COPD prevalence
-* Outcome: We reject the Null Hypothesis.
-
+Autoregressive Integrated Moving Average (ARIMA) Modeling: 
 ## <u>Planning Process</u>
 #### Planning
-1. Clearly define the problem statement related to the DHHS Chronic Disease Indicator dataset, including essential information for addressing the chronic disease of interest.
+1. Clearly define the problem statement related to Yahoo Finance Stock market dataset for Boeing, Nike, Coca-Cola company, including essential information for addressing the chronic disease of interest.
 
 2. Create a detailed README.md file documenting the project's context, dataset characteristics, and analysis procedure for easy reproducibility.
 
@@ -116,8 +96,10 @@ alpha = .05
 ## <u>Instructions to Reproduce the Final Project Notebook</u> 
 To successfully run/reproduce the final project notebook, please follow these steps:
 
-1.  Read this README.md document to familiarize yourself with the project details and key findings.
-2. Before proceeding, ensure that you have the necessary database credentials. Get data set from https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi Create .gitignore for privacy if necessary
+1. Read this README.md document to familiarize yourself with the project details and key findings.
+2. Before proceeding, ensure that you have the necessary database credentials. Get data set from https://finance.yahoo.com/quote/BA/history?p=BA
+, https://finance.yahoo.com/quote/KO?p=KO&.tsrc=fin-srch, https://finance.yahoo.com/quote/NKE/history?p=NKE
+Create .gitignore for privacy if necessary
 3. Clone the classification_project repository from my GitHub or download the following files: aquire.py, wrange.py or prepare.py, and final_report.ipynb. You can find these files in the project repository.
 4. Open the final_report.ipynb notebook in your preferred Jupyter Notebook environment or any compatible Python environment.
 5. Ensure that all necessary libraries or dependent programs are installed. You may need to install additional packages if they are not already present in your environment.
@@ -127,53 +109,12 @@ By following these instructions, you will be able to reproduce the analysis and 
 
 ## <u>Key Findings</u>
 
-* <span style ='color:#1F456E'> Gender Disparity in COPD Diagnosis: Women had higher observations of COPD than men. This could be because women smokers are about 50% more likely to develop COPD than men. Generally, women smoke less than men, suggesting that they may be more susceptible to developing COPD. In another large population study, females appear to have more severe COPD with early-onset disease and a greater susceptibility to COPD with lower tobacco exposure. (Barnes,2016)
-    
-* <span style ='color:#1F456E'> This analysis revealed significant gender disparities in COPD observations of female to male. This may be attributed to men having higher rates of undiagnosed COPD, irrespective of race. This suggests that men are less likely to receive timely COPD diagnoses compared to women (Mamary et al., 2018). Resulting in females having higher reported cases of COPD. An outside study suggests, one possible factor could be differences in symptom perception and attitudes toward medical care between genders(Mamary et al., 2018). Which also could show why women have higher diagnosis. Addressing this gender disparity in COPD diagnosis is crucial to ensure timely interventions and improved healthcare outcomes for both men and women.
-    
-* <span style ='color:#1F456E'> The data highlights racial disparities in COPD diagnosis. When considering the population distribution by in the US by race 60% White, 18 % Hispanic, 12% African American (AA) and 6% Asian. COPD is unevenly distributed with AA, and Hispanic having the same amount as White dispite having a smaller populous. Once considered a disease primarily affecting white men, now recognized as increasingly prevalent among AA men and women. One study showed that the risk for undiagnosed COPD was not uniform within the study population, indicating significant disparities by race . Understanding the population characteristics of the approximately 13 million individuals with undiagnosed COPD is essential to address and mitigate these disparities(Mamary et al., 2018). Tailored interventions and targeted healthcare initiatives should be implemented to improve COPD diagnosis rates and healthcare access for racial minority groups. (Mamary et al., 2018)
-
-* <span style ='color:#1F456E'> Yearly Rates in COPD: Evidence showed substantial shift in COPD prevalence From 2014 to 2018, dispite COPD rates remaining stable, with little change on average year to year. However, a significant decline in both rates and counts occurred from 2018 to 2019, possibly due to a change in the question format and later the COVID-19 global pandemic. The subsequent decrease in COPD rates and counts from 2019 to 2020 may not be statistically relevant.(ALA, 2023; Awatade, 2023)
-The similarity in symptoms between COPD and COVID-19 has resulted in delayed diagnosis for some COPD patients infected with COVID-19. Misdiagnosis as a COPD exacerbation has been reported, further complicating the reporting of COPD and may be reason for reported decline. (Awatade, 2023).
-    
     
 ## <u>Conclusion</u>
-- The analysis of the DHHS Chronic Disease Indicators dataset revealed significant relationships between gender, race/ethnicity, US locations, and COPD prevalence.
-- The predictive models, including the Decision Tree Test Model, consistently performed well with close alignment to the baseline accuracy of 76.21%. The Decision Tree Test Model showed a marginal improvement at 76.28%.
-- The findings underscore gender and racial disparities in COPD diagnosis, highlighting the need for tailored interventions to improve healthcare access and timely diagnoses for underserved populations. Continuous monitoring of COPD rates is crucial for targeted interventions in COPD prevention and management. Additionally, the impact of COVID-19 on COPD patients emphasizes the importance of considering comorbidities and ensuring prompt and accurate diagnoses during pandemics. This study provides essential insights into COPD prevalence, guiding effective public health strategies to mitigate COPD's impact in the United States.
 
 ## <u>Next Steps</u>
 
-1. **Time-Series Analysis:** Consider conducting a time-series analysis to gain valuable insights into the trends and patterns of COPD prevalence over the years. Pay particular attention to the significant decline observed between 2018 and 2019. Exploring this time range in more detail may reveal underlying factors or interventions that contributed to the change in COPD rates.
 
-2. **Melt Observation Data:** Refine the observations and uncover more meaningful relationships by utilizing the 'melt' operation to reshape the data. This transformation converts the data from a wide format to a long format, facilitating the analysis and visualization of relationships between different variables and COPD prevalence.
-
-3. **Geo-Location Clustering:** Investigate the spatial distribution of COPD prevalence by selecting specific geographic areas. Conduct clustering analysis to identify regions with similar COPD patterns based on geo-location data. This exploration can shed light on whether certain locations are more susceptible to higher or lower COPD rates and guide targeted intervention strategies.
-
-4. **Feature Engineering for Specific COPD Types and Age:** Enhance predictions and insights by implementing targeted feature engineering for specific COPD types and age groups in the DHHS Chronic Disease Indicators analysis. Capture unique characteristics and risk factors associated with different COPD types and specific age ranges to improve accuracy in prevalence predictions.
-    
-## <u>Recommendations</u>
-
-- **Targeted Awareness Campaigns:** 
--- Implement targeted interventions to address gender disparities in COPD diagnosis, encouraging early reporting of symptoms and enhancing healthcare access for both men and women.
---Develop and implement tailored healthcare initiatives to address racial disparities in COPD diagnosis, focusing on improving access and healthcare outcomes for racial minority groups.
--- Enhance awareness and education among healthcare providers to differentiate COVID-19 symptoms from COPD exacerbation to enable prompt and accurate diagnosis for COPD patients during pandemics.Focus on raising awareness about specific COPD types that are most prevalent in certain gender and race/ethnicity groups. Tailored awareness campaigns can improve early detection and prompt appropriate interventions.
-
-- **Further Research:** Conduct further research to understand the reasons there has been no improvemetnt with COPD. Possible decrease in cigarettes, but increase in vaping. Identify factors contributing to stagnation in COPD prevalence.
-
-By implementing these recommendations and conducting additional research, we can gain deeper insights into COPD prevalence, improve early detection, and implement effective interventions, ultimately leading to better COPD outcomes and improved public health.
-    
-    
-## <u>LinkedIn Project Description</u>
-    
-A comprehensive investigation was conducted on COPD, utilizing machine learning techniques with the DHHS Chronic Disease Indicator dataset, which contained over 1.2 million entries. To process and visualize the data effectively, I employed essential Python libraries such as Pandas, Matplotlib, Seaborn, Scipy, and Scikit-Learn. For presenting the geographical distribution, I used Tableau to create interactive map visualizations. Additionally, I incorporated Folium to produce dynamic and engaging map visuals for an interactive user experience. During the analysis, I opted for the Decision Tree model due to its consistent and marginally beat baseline accuracy significant findings, which were further supported by peer-reviewed studies on COPD. The primary goal of the project was to contribute to public health by enhancing the understanding of COPD prevalence management and identifying potential improvements.
-    
+## <u>Recommendations</u>   
     
 ## <u>References</u>
-
-- American Lung Association.[ALA] (2023). COPD Prevalence. Retrieved from https://www.lung.org/research/trends-in-lung-disease/copd-trends-brief/copd-prevalence
-- Awatade, N. T., Wark, P. A. B., Chan, A. S. L., Mamun, S. M. A. A., Mohd Esa, N. Y., Matsunaga, K., Rhee, C. K., Hansbro, P. M., Sohal, S. S., & On Behalf Of The Asian Pacific Society Of Respirology Apsr Copd Assembly (2023). The Complex Association between COPD and COVID-19. Journal of clinical medicine, 12(11), 3791. https://doi.org/10.3390/jcm12113791
-- Barnes, P. J. (2016). Sex differences in chronic obstructive pulmonary disease mechanisms. American journal of respiratory and critical care medicine, 193(8), 813-814.
-- Mamary, A. J., Stewart, J. I., Kinney, G. L., Hokanson, J. E., Shenoy, K., Dransfield, M. T., Foreman, M. G., Vance, G. B., Criner, G. J., & COPDGene® Investigators (2018). Race and Gender Disparities are Evident in COPD Underdiagnoses Across all Severities of Measured Airflow Obstruction. Chronic obstructive pulmonary diseases (Miami, Fla.), 5(3), 177–184. https://doi.org/10.15326/jcopdf.5.3.2017.0145
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6296789/
-    
