@@ -1,7 +1,7 @@
 # Stock Anaylsis 
 # <bu>Time Series Project</bu>
-by Annie Carter
-Sourced by Yahoo Finance
+* by Annie Carter
+* Sourced by Yahoo Finance
 ![Image-3.png](https://images.theconversation.com/files/526640/original/file-20230516-23-zv2vps.jpg?ixlib=rb-1.1.0&rect=121%2C80%2C4372%2C2910&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip)
 
 ## <u>Background</u>
@@ -64,15 +64,14 @@ Autoregressive Integrated Moving Average (ARIMA) Modeling:
 7. Utilize exploratory data analysis techniques, employing compelling visualizations and relevant statistical tests to extract meaningful patterns and relationships within the dataset.
 
 #### Modeling
-8. Carefully choose a suitable machine learning algorithm, evaluating options like Moving Averages (MA), Exponential Smoothing, Autoregressive Integrated Moving Average (ARIMA), Holt's Linear Trend time-series analysis task.
+8. Carefully choose a suitable machine learning algorithm, evaluating options like Moving Averages (MA), Holt's Linear Exponential Smoothing, Autoregressive Integrated Moving Average (ARIMA),  time-series analysis task.
 
-9. Implement the selected machine learning models using robust libraries (e.g., scikit-learn), systematically evaluating multiple models, including Decision Trees, Logistic Regression, and Random Forests, with a fixed Random Seed value 42 for reproducibility.
-
+9. Implement the selected machine learning models using robust libraries (e.g., scikit-learn, statsmodel), systematically evaluating multiple  time series models models (MA, Holt's Linear Trend, ARIMA)
 10. Train the models rigorously to ensure optimal learning and model performance.
 
 11. Conduct rigorous model validation techniques to assess model generalization capability and reliability.
 
-12. Select the most effective model, such as Logistic Regression, based on thorough evaluation metrics for further analysis.
+12. Select the most effective model, such as ARIMA or HLT, based on thorough evaluation metrics for further analysis.
 
 #### Product Delivery
 13. Assemble a final notebook, combining superior visualizations, well-trained models, and pertinent data to present comprehensive insights and conclusions with scientific rigor.
