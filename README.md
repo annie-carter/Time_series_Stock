@@ -25,34 +25,23 @@ The primary goal of this project is to develop a robust Time-Series Machine Lear
 4. Is there any correlation between external factors such as economic indicators, news sentiment, or industry-specific events, and the time series forecast of stock prices for KO, NKE, and BA, offering a deeper understanding of the stock market behavior for these companies?
 
 ## <u>Initial Questions</u>
-The initial dataset comprised of three dataframes, 7 columns, which reduced to 9 columns after preparation. It contained 1,185,676 rows, but a random sample of 1,000,000 rows was chosen for this project using a random state of 42. During preparation, the central target column "Yes_COPD" was created by combining the top four prevalent chronic diseases: COPD, Cardiovascular Disease, Diabetes, and Chronic Obstructive Pulmonary Disease (COPD). Column names were renamed for improved readability and cleaned for data integrity, resulting in 537,407 rows. Some column definitions were obtained from the Center for Disease Control and Prevention (CDC) Morbidity and Mortality Weekly Report (MMWR) at https://www.cdc.gov/mmwr/pdf/rr/rr6401.pdf. 
+The initial dataset comprised of three dataframes, 7 columns, which expanded to 8 columns after preparation. It contained 1758 rows. Date column used as indexed and converted to datetime data type. Column "Symbol" added to sort different stock symbols.  
 
-| Original                    |   Target     |       Datatype           |       Definition              |
-|-----------------------------|------------- |--------------------------|------------------------------ |
-|Topic (COPD, Cardiovascular  |              |                          |                               |
-|Disease, Diabetes, Chronic   |Yes_COPD      | 537407 non-null  int64   |  target variable              |
-|Obstructive Pulmonary Disease|              |                          |                               |
+|   Target         |       Datatype           |                Definition                   |
+|:----------------:|:------------------------:|:-------------------------------------------:|
+|   Close          |       float64            |The opening price of the stock for that day.
 
 
-|     Original                |   Feature     |       Datatype          |     Definition                |
-|-----------------------------|-------------- |------------------------ |------------------------------ |
-|YearStart                    |Year           | 537407 non-null  int64  | Year of observations          |
-|LocationAbbr                 |State (Abbr)   | 537407 non-null  object | State Abbreviation            |
-|Gender                       |Gender         | 537407 non-null  object | Male or Female                | 
-|Stratification1              |Demographics   | 537407 non-null  object | Demographics                  |    
-|GeoLocation                  |Geo Location   | 537407 non-null  object | Latitude and Longituted       |
-|Race/Ethnicity               |Race/Ethnicity | 537407 non-null  object | Race or Ethnicity             |
-|StratificationCategory1      |"same"         | 537407 non-null  object | Used for feature engineering  |
-|Longitude                    |Longitude      | 537407 non-null  float64| Longitude                     |
-|Latitude                     |Latitude       | 537407 non-null  float64| Latitude                      |
-|Yes_female                   |Yes_Female     | 537407 non-null  int64  | Female = 1 Male = 0           |
-|Yes_White, non-Hispanic      |Yes_White      | 537407 non-null  int64  | Yes_White =1 No= 0            |
-|Yes_Black, non-Hispanic      |Yes_Black      | 537407 non-null  int64  | Yes_Black = 1, No = 0         |
-|Yes_Hispanic                 |Yes_Hispanic   | 537407 non-null  int64  | Yes_Hispanic = 1 No = 0       |
-|Yes_Asian or Pacific Islander|Yes_Asian_PI   | 537407 non-null  int64  | Yes_Asian_PI = 1, No = 0      |
-|Yes_Other, non-Hispanic      |Yes_Other      | 537407 non-null  int64  | Yes_Other = 1, No =0          |
-|Yes_Amn Indian Alaska Native |Yes_Native_Amn | 537407 non-null  int64  | Yes_Native = 1, No =0         |
-|Yes_Multiracial, non-Hispanic|Yes_Multiracial| 537407 non-null  int64  | Yes_Multiracial = 1, No =0    |
+|  Attribute       |       Datatype           |                Definition                   |
+|:----------------:|:------------------------:|:-------------------------------------------:|
+
+|Date         | 1758 non-null  int64  | The date of the trading day.         |
+|Open         | 1758 non-null  object | The opening price of the stock for that day.          |
+|High  | 1758 non-null  object |The highest price the stock reached during that day.              |    
+|Low  | 1758 non-null  object |  The lowest price the stock reached during that day.   |
+|Dividend | 1758 non-null  object | Any dividends paid out on that day.        |
+|Stock Split        | 537407 non-null  object | Any stock splits that occurred on that day.|
+|Symbol | 1758 non-null  object | Stock Symbol of company      |
 
 
 ## <u>Statistical Testing Hypothesis </u>
