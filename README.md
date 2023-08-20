@@ -1,7 +1,8 @@
 # Stock Anaylsis 
 # <bu>Time Series Project</bu>
-* by Annie Carter
+* by Annie Carter, MSN, BS, RN
 * Sourced by Yahoo Finance
+  
 ![Image-3.png](https://images.theconversation.com/files/526640/original/file-20230516-23-zv2vps.jpg?ixlib=rb-1.1.0&rect=121%2C80%2C4372%2C2910&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip)
 
 ## <u>Background</u>
@@ -35,8 +36,8 @@ The initial dataset comprised of three dataframes, 7 columns, which expanded to 
 |  Attribute       |       Datatype           |                Definition                   |
 |:----------------:|:------------------------:|:-------------------------------------------:|
 |Date              | 1758 non-null  int64     | The date of the trading day.         |
-|Open         | 1758 non-null  object | The opening price of the stock for that day.          |
-|High  | 1758 non-null  object |The highest price the stock reached during that day.              |    
+|Open              | 1758 non-null  object | The opening price of the stock for that day.          |
+|High              | 1758 non-null  object |The highest price the stock reached during that day.              |    
 |Low  | 1758 non-null  object |  The lowest price the stock reached during that day.   |
 |Dividend | 1758 non-null  object | Any dividends paid out on that day.        |
 |Stock Split        | 537407 non-null  object | Any stock splits that occurred on that day.|
