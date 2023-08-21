@@ -95,7 +95,7 @@ By following these instructions, you will be able to reproduce the analysis and 
 
 
 ## <u>Key Findings</u>
-
+### ** AAPL findings = 
     
 ## <u>Conclusion</u>
 
@@ -105,3 +105,5 @@ By following these instructions, you will be able to reproduce the analysis and 
 ## <u>Recommendations</u>   
     
 ## <u>References</u>
+Dhaduk, H. (2021, July 18). Stock market forecasting using Time Series analysis With ARIMA model.
+
