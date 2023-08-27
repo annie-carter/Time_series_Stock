@@ -23,7 +23,7 @@ The primary objective of this project is to construct a robust Time-Series Machi
 
 3. Can ML time series forecasting unveil any seasonality or cyclical patterns in the stock prices of AAPL, MSFT, V, and AXP, offering valuable insights for traders and investors to fine-tune their strategies?
 
-4. Is there any correlation between external factors such as economic indicators, news sentiment, or industry-specific events, and the time series forecast of stock prices for AAPL, MSFT, V, and AXP, providing deeper insights into the behavior of the stock market for these companies?
+
 
 ## <u>Data Dictionary</u>
 The initial dataset comprised of three dataframes, 7 columns, which expanded to 8 columns after preparation. It contained 1758 rows. Date column used as indexed and converted to datetime data type. Column "Symbol" added to sort different stock symbols.  
